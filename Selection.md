@@ -47,3 +47,5 @@ if (history[i] == "win") {
     } else {
       draw++;
 ```
+
+These are selections.

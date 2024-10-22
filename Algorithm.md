@@ -53,3 +53,5 @@ function rockPaperScissors(input) {
   );
 }
 ```
+
+This is an algorithm
