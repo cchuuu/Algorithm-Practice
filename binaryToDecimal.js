@@ -14,16 +14,21 @@ function binaryToDecimal(binary) {
   }
   return decimal;
 }
-console.log(binaryToDecimal("10001"));
+console.log(binary);
 
 function decimalToBinary(decimal) {
-  let binary = 0;
+  const binary = [];
   let x = decimal;
-    while (x != 0) {
-        x % 2 = 
+
+  while (x !== 0) {
+    if (x % 2 === 0) {
+      binary.push("0");
+    } else {
+      binary.push("1");
     }
-
+    x = Math.floor(x / 2);
   }
-}
 
-//divide by 2, divide the quotient by 2 until 0, remainder = binary. 
+  return binary.reverse().join("");
+}
+console.log(decimalToBinary("128"));
